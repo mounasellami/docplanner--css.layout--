@@ -194,8 +194,8 @@ option {
     padding: 0 1.3%;/*****/
     margin: 1.1%  12% ;/*****/
 }
-.Partners h1 {
-    width: 33%;
+.Partners h2 {
+    width: 30%;
     font-size: 26px;
     margin: 16px 0 11px 0;
     padding-right: 16px;
@@ -216,7 +216,7 @@ option {
     padding-right: 27px;
 }
 .Partner-logo svg path {
-    fill: currentColor; /* change color logo svg to gris*/    
+    fill: #887b75; /*currentColor; /* change color logo svg to gris*/    
 }
 .Partner-logo svg:hover{
     color: #00b39b; /*when i click change color*/
@@ -260,7 +260,7 @@ option {
     width: 456px;
     pointer-events: none;
 }
-.stats-introduction h1{
+.stats-introduction h2{
     width: 497px;
     margin: 23px 0;
     font-size: 35px;
@@ -313,7 +313,7 @@ option {
     line-height: 41px;   /* largesr space bettween line */
     margin-bottom: 63px;/*space between cards-introduction & cards*/
 }       
-.cards-introduction h1 {
+.cards-introduction h2 {
     font-size: 31px;
     line-height: 37px;   /* largest space bettween line */
     margin-bottom: 9px;/*space between stats & cards-introduction*/
@@ -412,7 +412,7 @@ figcaption {
     padding: 0 1.3%;/*****/
     margin: 7.1% 12%; /* 1.1%  12% ;/*****/
 }
-.join-us h1 {
+.join-us h2 {
     display: block;
     color: #333;
     font-size: 30px;
