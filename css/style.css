@@ -1,456 +1,463 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*google font=>roboto*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'); /*google font=> Work Sans*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap'); /*google font=> Work Sans*/
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /*google font=>roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"); /*google font=> Work Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap"); /*google font=> Work Sans*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    font-family: Roboto,Arial,sans-serif;
-    font-weight: 400;
-    color: #747474;
-    /*width: 1366px; /*(1200px or 992px or 768px or 576ppx)*/
-    /*padding: auto;   Center all when there is a div */
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #747474;
+  /*width: 1366px; /*(1200px or 992px or 768px or 576ppx)*/
+  /*padding: auto;  */
 }
-         /* Header */
-.docplanner-header{
-    width: 100%;
-    z-index: 7;
-    background: hsla(0,0%,100%,.98);
-    transition: box-shadow .25s ease 0s;
-    position: fixed;/*spec type position(static/fixed/relative/absolute/sticky)*/
-    top: 0;
-    left: 0;
+/* Header */
+.docplanner-header {
+  width: 100%;
+  z-index: 7;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+  position: fixed; /*spec type position(static/fixed/relative/absolute/sticky)*/
+  top: 0;
+  left: 0;
 }
-.docplanner-nav{
-    display: flex; /*horizontal alignment(axis of x) alig between menu (about career d..)*/
-    align-self: flex-start;/*Barre mlfou9*/
-    justify-content: space-between; /*spacing 3ala jnab*/
-    zoom: 1;
-    /* max-width: 973px; */
-    padding: 0 1.3%;/*****/
-    margin: 1.1%  12.53% ;/*****/
+.docplanner-nav {
+  display: flex; /*horizontal alignment(axis of x) alig between menu (about career d..)*/
+  align-self: flex-start; /*Barre mlfou9*/
+  justify-content: space-between; /*spacing 3ala jnab*/
+  zoom: 1;
+  /* max-width: 973px; */
+  padding: 0 1.3%; /*****/
+  margin: 1.1% 12.53%; /*****/
 }
-a { color: #747474;
-    list-style-type: none ;
-    text-decoration: none;   /* in7i star eli ken mlouta */
+a {
+  color: #747474;
+  list-style-type: none;
+  text-decoration: none; /* in7i star eli ken mlouta */
 }
 .logo-docplanner {
-    width: 268px;
-    height: 33px;
+  width: 268px;
+  height: 33px;
 }
-.header-menu{
-    font-size: 15px;
-    font-weight: 400;
-    padding: 9.7px 0px; /* Spacing T B menu */
-    list-style-type: none ; /* "li" ta3ml point tn7iha*/
-    display: flex;
+.header-menu {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 9.7px 0px; /* Spacing T B menu */
+  list-style-type: none; /* "li" ta3ml point tn7iha*/
+  display: flex;
 }
-.header-menu a { 
-    color: #ababab;
-    padding: 0 10.3px ; /*space between el( about...) header-menu*/
+.header-menu a {
+  color: #ababab;
+  padding: 0 10.3px; /*space between el( about...) header-menu*/
 }
-#active { color: #00b39b; } 
-.header-menu a:hover { color: #00b39b;}
+#active {
+  color: #00b39b;
+}
+.header-menu a:hover {
+  color: #00b39b;
+}
 .dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-} 
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 .dropdown-content {
-    position: absolute;
-    display: none;
-    background: #fff;
-    box-shadow: 0 5px 10px 0 #d3cfc9; /*tthol*/
-    min-width: 220px;
-    padding-top: 10px;
-    margin-left: -100px;
-    z-index: 1;
-    list-style-type: none ; /* "li" ta3ml point tn7iha*/
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9; /*tthol*/
+  min-width: 220px;
+  padding-top: 10px;
+  margin-left: -100px;
+  z-index: 1;
+  list-style-type: none; /* "li" ta3ml point tn7iha*/
 }
-.dropdown-content li{
-    padding: 10px;
+.dropdown-content li {
+  padding: 10px;
 }
-.dropdown:hover .dropdown-content { display: block;}
-.dropdown-content li:hover  { 
-    background-color: #eaeaea; 
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-.dropdown-content li:hover  .link{ 
-    color: #00b39b;
+.dropdown-content li:hover {
+  background-color: #eaeaea;
+}
+.dropdown-content li:hover .link {
+  color: #00b39b;
 }
 
-
-
-            /* section 1: Introduction */
+/* section 1: Introduction */
 .introduction {
-    display: flex;
-    flex-direction: column;  /* l'axe principale l'axe des y */
-    align-items: center; /* global center */
-    padding: 0 1.3%;/*****/
-    margin: 1.1%  12% ;/*****/
-}     
-.introduction-logo {
-    max-width: 100%;
-    height: auto;
-    border: 0;   /*OR width: 50px; height: 50px; */
-    padding-top: 88px;
+  display: flex;
+  flex-direction: column; /* l'axe principale l'axe des y */
+  align-items: center; /*=>center all from the left / global center: text-align: center; */
+  padding: 0 1.3%; /*****/
+  margin: 1.1% 12%; /*****/
 }
-h1, h2, h3, h4{
-    font-family: Work Sans,Arial,sans-serif;
-    color: #00b39b;  
-    font-weight: 300;
-    letter-spacing: -.3px;
-    margin: 16px 0;
-} 
-.introduction-title { 
-    font-size: 34px;
-    padding-top: 1px;
-    margin: 34px 0;
+.introduction-logo {
+  max-width: 100%;
+  height: auto;
+  border: 0; /*OR width: 50px; height: 50px; */
+  padding-top: 88px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Work Sans, Arial, sans-serif;
+  color: #00b39b;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  margin: 16px 0;
+}
+.introduction-title {
+  font-size: 34px;
+  padding-top: 1px;
+  margin: 34px 0;
 }
 .introduction-pargraphs {
-    width: 100%;
-    display: flex;
-    margin-bottom: 75.8px; /* space between parg and section card */
-    line-height: 29px;   /* largest space bettween line */
-    font-size: 16px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 75.8px; /* space between parg and section card */
+  line-height: 29px; /* largest space bettween line */
+  font-size: 16px;
 }
-.col-{
-    display: block;
-    width: 50%;
-    float: left;
+.col- {
+  display: block;
+  width: 50%;
+  float: left;
 }
-.col-L{  padding: 10px 10px 0 0; }
-.col-R{  padding: 10px 0 0 10px; }
+.col-L {
+  padding: 10px 10px 0 0;
+}
+.col-R {
+  padding: 10px 0 0 10px;
+}
 
-
-
-         /* section 2: Services */
+/* section 2: Services */
 .services {
-    display: flex;
-    justify-content: center; /*margin: 0 3%;*/
-    height: 345px;
-    width: 100%;
-    border: 0;
+  display: flex;
+  justify-content: center; /*margin: 0 3%;*/
+  height: 345px;
+  width: 100%;
+  border: 0;
 }
 .service-card {
-    width: 23.5%; /*33.333333333333%;*/
-    padding: 10px;
-    border-radius: 7px;   /* coin arrondi */
-    color: white;
-    border: none;
-    overflow: hidden;
+  width: 23.5%; /*33.333333333333%;*/
+  padding: 10px;
+  border-radius: 7px; /* coin arrondi */
+  color: white;
+  border: none;
+  overflow: hidden;
 }
-.service-card-patients{
-   background-color: #00b39b;
-   margin-right: 12px;   /*space between card and the other cad*/
-   padding: 32px 32px 0 32px;
+.service-card-patients {
+  background-color: #00b39b;
+  margin-right: 12px; /*space between card and the other cad*/
+  padding: 32px 32px 0 32px;
 }
 .service-card-doctors {
-    background-color:#3d83df;
-    margin: 0 6px;   /*space between card and the other cad*/
-    padding: 32px 32px 0 32px;
+  background-color: #3d83df;
+  margin: 0 6px; /*space between card and the other cad*/
+  padding: 32px 32px 0 32px;
 }
-.service-card-clinics{
-    background-color: #1b2734;
-    margin-left: 12px;   /*space between card and the other cad*/
-    padding: 32px 32px 0 32px;
+.service-card-clinics {
+  background-color: #1b2734;
+  margin-left: 12px; /*space between card and the other cad*/
+  padding: 32px 32px 0 32px;
 }
-.service-card-for{
-    font-weight: 400;
-    color: #fff;
-    margin: 4px 0;
-    font-size: 26px;
+.service-card-for {
+  font-weight: 400;
+  color: #fff;
+  margin: 4px 0;
+  font-size: 26px;
 }
-.service-card-text{
-    font-weight: 300;
-    color: #fff;
-    margin: 0;
-    font-size: 25px;
-    line-height: 1.2;
-    padding-bottom: 93px;
+.service-card-text {
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  padding-bottom: 93px;
 }
 .clinic {
-    padding-bottom: 58px;
+  padding-bottom: 58px;
 }
-.service-card-select{
-    margin-bottom: 15px;
-    color: white;
-    background: transparent;
-    border: none;
-    text-decoration: underline;
-    font-size: 19px;
-    padding: 0 7px 0 0;   /* s. between words and >row */
+.service-card-select {
+  margin-bottom: 15px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 19px;
+  padding: 0 7px 0 0; /* s. between words and >row */
 }
 option {
-    color: black;
+  color: black;
 }
 
-
-
-         /* section 3: Partners */
+/* section 3: Partners */
 .Partners {
-    display: flex; /*horizontal alignment  (axis of x)*/
-    margin: 72px 0;
-    padding: 0 1.3%;/*****/
-    margin: 1.1%  12% ;/*****/
+  display: flex; /*horizontal alignment  (axis of x)*/
+  margin: 72px 0;
+  padding: 0 1.3%; /*****/
+  margin: 1.1% 12%; /*****/
 }
 .Partners h2 {
-    width: 30%;
-    font-size: 26px;
-    margin: 16px 0 11px 0;
-    padding-right: 16px;
+  width: 30%;
+  font-size: 26px;
+  margin: 16px 0 11px 0;
+  padding-right: 16px;
 }
 .Partners-logos {
-    width: 67%;
-    display: flex; /*horizontal alignment  (axis of x)*/
-    flex-wrap: wrap;
-    align-items: center;
-    list-style-type: none;
-    margin-top: 32px ;
-    line-height: 41px;   /* largest space bettween line */
+  width: 67%;
+  display: flex; /*horizontal alignment  (axis of x)*/
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 32px;
+  line-height: 41px; /* largest space bettween line */
 }
 .Partner-logo svg {
-    height: auto;
-    width: 136px; /* size logo svg138*/
-    max-width: 100%;
-    padding-right: 27px;
+  height: auto;
+  width: 136px; /* size logo svg138*/
+  max-width: 100%;
+  padding-right: 27px;
 }
-.Partner-logo svg path {
-    fill: #887b75; /*currentColor; /* change color logo svg to gris*/    
+.Partners-logos a path {
+  fill: #887b75; /*currentColor; /* change color logo svg to gris*/
 }
-.Partner-logo svg:hover{
-    color: #00b39b; /*when i click change color*/
+.Partners-logos a path:hover{
+  /* color: #00b39b; if right just :hover witout path:hover it will not work*/
+  fill: hsl(172, 100%, 38%); /*when i click change color  */
 }
 .Partner-logo img {
-    height: 34px;
-    width: 130px; /* size logo svg*/
-    max-width: 90%;
+  height: 34px;
+  width: 130px; /* size logo svg*/
+  max-width: 90%;
 }
-.grayscale { 
-    filter: invert(0.6) saturate(0.6); /* change color logo img to gris*/
- /*https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/*/
+.grayscale {
+  filter: invert(0.6) saturate(0.6); /*change color logo img to gris*/
+  /*https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/*/
+  -webkit-filter: invert(0.6) saturate(0.6);
 }
-.grayscale:hover{
-    filter: none; /*when i click change color*/
+.grayscale:hover {
+  filter: none; /*when i click change color*/
 }
 
-
-
-         /* section 4: Stats */
+/* section 4: Stats */
 .stats {
-    height: 600px;
-    zoom: 1;
-    padding: 20px 20px;
-    margin: 50px 0 88px 0;
-    background-color: #e5faf8;
-    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
-    overflow: hidden;/*hidden:ttna7a lktiba eli lbara lblock (visible:ktiba 7atta ta7t tab / scroll:ta3ml scroll wst tab-auto:scroll)*/
-    display: block;
-    position: relative;
+  height: 600px;
+  zoom: 1;
+  padding: 20px 20px;
+  margin: 50px 0 88px 0;
+  background-color: #e5faf8;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+  overflow: hidden; /*hidden:ttna7a lktiba eli lbara lblock (visible:ktiba 7atta ta7t tab / scroll:ta3ml scroll wst tab-auto:scroll)*/
+  display: block;
+  position: relative;
 }
-.col- .col-stats-left{  
-    margin-top: 57px;
-    padding-left: 77px;
+.col- .col-stats-left {
+  margin-top: 57px;
+  padding-left: 77px;
 }
 .stats-introduction {
-    padding: 0 1.3%;/*****/       /* padding: 10px 0 0 100px; */
-    margin: 1.1%  12% ;/*****/    
-    right: 67%;
-    top: 45%;
-    width: 456px;
-    pointer-events: none;
+  padding: 0 1.3%; /*****/ /* padding: 10px 0 0 100px; */
+  margin: 1.1% 12%; /*****/
+  right: 67%;
+  top: 45%;
+  width: 456px;
+  pointer-events: none;
 }
-.stats-introduction h2{
-    width: 497px;
-    margin: 23px 0;
-    font-size: 35px;
+.stats-introduction h2 {
+  width: 497px;
+  margin: 23px 0;
+  font-size: 35px;
 }
-.stats-introduction p{
-    width: 107%;
-    font-size: 14px;
-    line-height: 21px;   /* largest space bettween line */
+.stats-introduction p {
+  width: 107%;
+  font-size: 14px;
+  line-height: 21px; /* largest space bettween line */
 }
-.logo-background{ 
-    zoom: 1;
-    max-width: 1015px;
-} 
- 
+.logo-background {
+  zoom: 1;
+  max-width: 1015px;
+}
+
 .col-stats-right {
-    display : flex;
-    /* flex-wrap: wrap; /*wrap:inatham card1.card2.../nowrap: nfs star 1.2..mnatham/wrap-reverse:7.6.5..*/
+  display: flex;
+  /* flex-wrap: wrap; /*wrap:inatham card1.card2.../nowrap: nfs star 1.2..mnatham/wrap-reverse:7.6.5..*/
 }
 .stats-card {
-    display: flex;
-    text-align: center; /* vertical-align: middle; */
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #fff;
-    width: 228.750px; /* width: 35%;*/
-    height: 250px;
-    border-radius: 5px;
-    align-items: center;
-    padding: 15px;
-    margin: 20px 10px; 
-    overflow: hidden;/*ttna7a lktiba eli bara tab*/
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  display: flex;
+  text-align: center; /* center all phrases     vertical-align: middle; */
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  width: 228.75px; /* width: 35%;*/
+  height: 250px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 15px;
+  margin: 20px 10px;
+  overflow: hidden; /*ttna7a lktiba eli bara tab*/
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
 }
 .stats-card h3 {
-    font-size: 29.53px;
+  font-size: 29.53px;
 }
 .stats-card p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
-
-
-         /* section 5: Cards */
+/* section 5: Cards */
 .cards-introduction {
-    display: block;
-    width: 100%;
-    display: flex;   /* l'axe principale l'axe des x */
-    flex-direction: column;  /* l'axe principale l'axe des y */
-    text-align: center; /*center all paragraphs*/
-    line-height: 41px;   /* largesr space bettween line */
-    margin-bottom: 63px;/*space between cards-introduction & cards*/
-}       
+  display: block;
+  width: 100%;
+  display: flex; /* l'axe principale l'axe des x */
+  flex-direction: column; /* l'axe principale l'axe des y */
+  text-align: center; /*center all paragraphs*/
+  line-height: 41px; /* largesr space bettween line */
+  margin-bottom: 63px; /*space between cards-introduction & cards*/
+}
 .cards-introduction h2 {
-    font-size: 31px;
-    line-height: 37px;   /* largest space bettween line */
-    margin-bottom: 9px;/*space between stats & cards-introduction*/
+  font-size: 31px;
+  line-height: 37px; /* largest space bettween line */
+  margin-bottom: 9px; /*space between stats & cards-introduction*/
 }
 .cards-introduction p {
-    font-size: 14px;
-    line-height: 25px;   /* largest space bettween line */
+  font-size: 14px;
+  line-height: 25px; /* largest space bettween line */
 }
 
 .offices-cards {
-    align-items: center;
-    overflow: hidden;/*clip the big cont or to add scrollbars(scroll) */
-    display: flex;   /* l'axe principale l'axe des x */
-    flex-wrap: wrap;
-    box-sizing: inherit;
-    margin: 0 12%;
-    zoom: 1;
-    clear: both;
+  align-items: center;
+  overflow: hidden; /*clip the big cont or to add scrollbars(scroll) */
+  display: flex; /* l'axe principale l'axe des x */
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  margin: 0 12%;
+  zoom: 1;
+  clear: both;
 }
-figure{ 
-    width: 33.333333333333%;
-    margin: 0;/*block without margin to let it 3cards in same line*/
-    padding-bottom: 30px;/*space between cards*/
+figure {
+  width: 33.333333333333%;
+  margin: 0; /*block without margin to let it 3cards in same line*/
+  padding-bottom: 30px; /*space between cards*/
 }
 .card {
-    padding: 0;/**/
-    overflow: hidden;/*clip the big cont or to add scrollbars(scroll) */
-    max-width: 311px;/*max of position btn*/
-    z-index: 2; /*order of a positioned*/
-    position: relative;/*type of positioning method(static, relative, fixed, absolute or sticky)*/
-    display: block;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,.03);    
-    background: #fff;
-    color: #747474;
-    box-shadow: 0 5px 10px 0 transparent;
-    transition: box-shadow .2s ease 0s;/*change property when i hover :add an effect  duration   slow start, then fast, then end slowly*/
-    text-decoration: none; /*not do lines under test*/
+  padding: 0; /**/
+  overflow: hidden; /*clip the big cont or to add scrollbars(scroll) */
+  max-width: 311px; /*max of position btn*/
+  z-index: 2; /*order of a positioned*/
+  position: relative; /*type of positioning method(static, relative, fixed, absolute or sticky)*/
+  display: block;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  background: #fff;
+  color: #747474;
+  box-shadow: 0 5px 10px 0 transparent;
+  transition: box-shadow 0.2s ease 0s; /*change property when i hover :add an effect  duration   slow start, then fast, then end slowly*/
+  text-decoration: none; /*not do lines under test*/
 }
 .card:hover {
-    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 13%);
+  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 13%);
 }
 img {
-    max-width: 100%;
-    height: auto;
-    border: 0;
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
-figure img{ 
-    margin: 0 auto;
-    display: block;
+figure img {
+  margin: 0 auto;
+  display: block;
 }
 figcaption {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6666666667;
+  padding: 20px;
 }
 .btn {
-    display: inline-block; /*btn "next" to word "inline=same line"*/
-    vertical-align: middle; /*"position" the el (word) next to btn*/
-    background: #3d83df;
-    color: #fff;
-    outline: 0; /*OUTSIDE the borders */
-    border: 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;/*5ochn lktiba*/
-    line-height: 16px;
-    letter-spacing: .04em;
-    position: relative;
-    transition: all .2s ease 0s;
-    font-family: Roboto,Arial,sans-serif;
-    zoom: 1;
-    cursor: pointer;
+  display: inline-block; /*btn "next" to word "inline=same line"*/
+  vertical-align: middle; /*"position" the el (word) next to btn*/
+  background: #3d83df;
+  color: #fff;
+  outline: 0; /*OUTSIDE the borders */
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700; /*5ochn lktiba*/
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  position: relative;
+  transition: all 0.2s ease 0s;
+  font-family: Roboto, Arial, sans-serif;
+  zoom: 1;
+  cursor: pointer;
 }
 .btn:hover {
-    background-color:#1662c6;
-    color: #fff;
+  background-color: #1662c6;
+  color: #fff;
 }
-.btn-seeopenings{
-    font-size: .625rem; /*1rem=16px*/
-    padding: 10px 15px;    
-    float: right;
+.btn-seeopenings {
+  font-size: 0.625rem; /*1rem=16px*/
+  padding: 10px 15px;
+  float: right;
 }
 
-
-
-         /* section 6: Join-us */
+/* section 6: Join-us */
 .join-us {
-    display: block;
-    text-align: center;
-    width: 100%;
-    max-width: 1015px;
-    position: relative;
-    padding: 0 1.3%;/*****/
-    margin: 7.1% 12%; /* 1.1%  12% ;/*****/
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 1015px;
+  position: relative;
+  padding: 0 1.3%; /*****/
+  margin: 7.1% 12%; /* 1.1%  12% ;/*****/
 }
 .join-us h2 {
-    display: block;
-    color: #333;
-    font-size: 30px;
-    margin-bottom: 37px;
+  display: block;
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 37px;
 }
 .btn-Seeallcurrentopenings {
-    text-decoration: none;
-    display: inline;
-    font-weight: 700px;
-    font-size: .75rem;
-    width: 174.406px;
-    height: 12px;
-    padding: 14px 18px;
+  text-decoration: none;
+  display: inline;
+  font-weight: 700px;
+  font-size: 0.75rem;
+  width: 174.406px;
+  height: 12px;
+  padding: 14px 18px;
 }
-         /* Footer */
+/* Footer */
 footer {
-    border-top: 1px solid #eef2f2;
-    text-align: center;
-    padding-top: 21px;    
-    color: #ababab;
-    zoom: 1;
-    position: relative;
-    font-size: 12px;
-
+  border-top: 1px solid #eef2f2;
+  text-align: center;
+  padding: 18px 0 ;
+  color: #ababab;
+  zoom: 1;
+  position: relative;
+  font-size: 12px;
 }
 .coutries {
-    display: inline;
-    letter-spacing: 0px;
+  display: inline;
+  letter-spacing: 0px;
 }
-.coutries a{
-    text-decoration: none;
-    color: #3d83df;
+.coutries a {
+  text-decoration: none;
+  color: #3d83df;
 }
-.coutries a:hover{
-    text-decoration: underline;
+.coutries a:hover {
+  text-decoration: underline;
 }
-footer p{
-    line-height: 32px;
-    text-align: center;
-    margin-bottom: -4px;
+footer p {
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: -4px;
 }
